@@ -1,0 +1,119 @@
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ------------------------------------------- */
+
+.product-detail .product-data {
+    display: flex;
+    border: 2px solid var(--db2-color);
+    border-radius: 20px;
+}
+
+/* ------------------ */
+
+.product-data .product-if {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    width: 50%;
+}
+
+.product-if img {
+    height: auto;
+    transition: transform 0.5s ease;
+    width: 280px;
+}
+.product-if img:hover {
+    transform: scale(1.1);
+}
+
+.product-if figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ------------------ */
+
+.product-data .product-info {
+    background-color: var(--sg-color);
+    border-radius: 0 20px 20px 0;
+    line-height: 2;
+    padding: 20px;
+    width: 50%;
+}
+
+.product-info p {
+    border-bottom: 1px dashed var(--db2-color);
+}
+
+/* ------------------------------------------- */
+
+.product-detail .product-code {
+    background-color: var(--sg-color);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+/* ------------------------------------------- */
+
+.product-detail .reviews {
+    border: 2px solid var(--db2-color);
+    border-left: none;
+    border-radius: 20px;
+}
+
+.reviews h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reviews .review-data {
+    background-color: var(--sg-color);
+    border-left: 10px solid var(--db2-color);
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+}
+
+/* ------------------------------------------- */
+
+.product-detail .back-btn {
+    background-color: var(--db2-color);
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 5px 10px;
+}
+.product-detail .back-btn:hover {
+    background-color: var(--db1-color);
+}
+
+/* Responsive Design ------------------------- */
+
+@media (max-width: 750px) {
+    .product-detail .product-data {
+        flex-direction: column;
+    }
+
+    .product-data .product-if {
+        width: 100%;
+    }
+
+    .product-data .product-info {
+        border-radius: 0 0 20px 20px;
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------- */
+
+
+

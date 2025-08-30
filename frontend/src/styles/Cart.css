@@ -1,0 +1,44 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ------------------------------------------- */
+
+.cart h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cart i {
+    text-align: center;
+}
+
+/* ------------------------------------------- */
+
+.cart .cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* ------------------------------------------- */
+
+.cart .co-btn {
+    background-color: var(--db2-color);
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 5px 10px;
+}
+.cart .co-btn:hover {
+    background-color: var(--db1-color);
+}
+
+/* ------------------------------------------- */
+
+

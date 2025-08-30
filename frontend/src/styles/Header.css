@@ -1,0 +1,89 @@
+header {
+    background-color: var(--db1-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+}
+
+/* ------------------------------------------- */
+
+header h1 {
+    font-size: 25px;
+    display: flex;
+}
+header h1:hover {
+    color: var(--db3-color);
+}
+
+header h1 img {
+    height: auto;
+    padding: 4px;
+    width: 40px;
+}
+
+/* ------------------------------------------- */
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav .nav:hover {
+    color: var(--db3-color);
+}
+
+/* ------------------------------------------- */
+
+header .h-btn {
+    display: flex;
+    gap: 20px;
+} 
+
+.h-btn button {
+    cursor: pointer;
+}
+.h-btn button:hover {
+    color: var(--db3-color);
+}
+
+.h-btn #bars {
+    display: none;
+}
+
+/* Responsive Design ------------------------- */
+
+@media (max-width: 1000px) {
+    header nav {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    header nav {
+        background-color: var(--db1-color);
+        border-top: 2px solid var(--db2-color);
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px 20px 10px 10px;
+        position: absolute;
+        inset: 60px 20px auto auto;
+    }
+
+    header nav.open {
+        display: flex;
+    }
+
+    header .h-btn #bars {
+        display: block;
+    }
+}
+
+/* ------------------------------------------- */
+
+

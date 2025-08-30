@@ -1,0 +1,69 @@
+.cart-item {
+    background-color: var(--sg-color);
+    border-radius: 10px;
+    padding: 10px;
+    transition: box-shadow 0.5s ease;
+    width: 280px;
+}
+.cart-item:hover {
+    box-shadow: 0 1px 10px var(--db2-color);
+}
+
+/* ------------------------------------------- */
+
+.cart-item h4 {
+    font-style: italic;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ------------------------------------------- */
+
+.cart-item img {
+    height: 240px;
+    margin: 10px 0;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+    width: 100%;
+}
+.cart-item img:hover {
+    transform: scale(1.02);
+}
+
+/* ------------------------------------------- */
+
+.cart-item .pq {
+    border-top: 1px solid var(--db2-color);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1px;
+}
+
+/* ------------------------------------------- */
+
+.cart-item .ur-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ur-btn button {
+    color: var(--db2-color);
+    cursor: pointer;
+}
+
+.ur-btn .u-btn :hover {
+    color: var(--db1-color);
+    transform: scale(1.2);
+}
+
+.ur-btn .r-btn:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* ------------------------------------------- */
