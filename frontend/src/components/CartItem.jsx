@@ -64,3 +64,6 @@ const CartItem = ({ product, onUpdate }) => {
 };
 
 export default CartItem;
+
+
+

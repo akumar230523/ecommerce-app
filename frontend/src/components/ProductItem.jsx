@@ -47,4 +47,3 @@ const ProductItem = ({ product }) => {
 };
 
 export default ProductItem;
-
